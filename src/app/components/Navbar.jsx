@@ -16,7 +16,7 @@ const Navbar = () => {
           >
             &#9776;
           </button>
-          <img src="/Logo.png" alt="Logo" className="logo" />
+          <img src="/Logo.png" alt="Logo of our project" className="logo" />
         </div>
 
         <div className="navbar-center">
@@ -25,26 +25,28 @@ const Navbar = () => {
 
         <div className="navbar-right">
           <button className="icon" aria-label="Search">
-            <img src="/search-normal.png" alt="Search" className="icon-img" />
+            <img
+              src="/search-normal.png"
+              alt="Search icon image"
+              className="icon-img"
+            />
           </button>
           <button className="icon" aria-label="Favorites">
-            <img src="/heart.png" alt="Favorites" className="icon-img" />
+            <img src="/heart.png" alt="Favorites icon image" className="icon-img" />
           </button>
           <button className="icon" aria-label="Cart">
-            <img src="/shopping-bag.png" alt="Cart" className="icon-img" />
+            <img src="/shopping-bag.png" alt="Cart icon image" className="icon-img" />
           </button>
-          {/* <button className="icon" aria-label="Profile">
-            <img src="/profile.png" alt="Profile" className="icon-img" />
-          </button> */}
+         
           <div className="hide-on-mobile">
             <button className="icon" aria-label="Profile">
-              <img src="/profile.png" alt="Profile" className="icon-img" />
+              <img src="/profile.png" alt="Profile icon image" className="icon-img" />
             </button>
             <div className="language-selector icon">
               <span>ENG</span>
               <img
                 src="/arrow-left.png"
-                alt="Language Arrow"
+                alt="Language Arrow icon"
                 className="icon-img"
               />
             </div>

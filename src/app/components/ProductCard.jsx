@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
           src={product.image}
           alt={getAltText(product)}
           className="product-image"
-          loading="lazy" // For performance
+          loading="lazy" 
         />
       </div>
       <div className="product-info">

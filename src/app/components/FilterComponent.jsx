@@ -1,4 +1,3 @@
-// src/components/FilterComponent.jsx
 import Colllapse from "./Colllapse";
 import "../styles/filter.css";
 
