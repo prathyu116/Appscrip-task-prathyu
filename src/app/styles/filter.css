@@ -1,0 +1,28 @@
+
+.filter-box-title{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 1rem;
+    padding: 1rem 0;
+
+    border-bottom: 1px solid #dcd0d0;
+   
+}
+.filter-box-title input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.collaps-body div{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+.collaps-body input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

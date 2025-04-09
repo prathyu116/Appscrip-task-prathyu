@@ -1,0 +1,19 @@
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid #dcd0d0;
+}
+.collapse-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.collapse-title-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
