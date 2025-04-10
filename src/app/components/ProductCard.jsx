@@ -1,8 +1,6 @@
-// src/components/ProductCard.js
 "use client";
 
 const ProductCard = ({ product }) => {
-  // Format the product title for SEO-friendly alt text
   const getAltText = (product) => {
     return `${product.title} - ${product.category} product`;
   };

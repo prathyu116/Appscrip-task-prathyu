@@ -1,5 +1,4 @@
-// src/components/ProductList.js
-"use client";
+"use client"
 import { useEffect, useState } from "react";
 import { fetchProducts } from "../services/api";
 import ProductCard from "./ProductCard";
@@ -49,7 +48,6 @@ const ProductList = () => {
     setSortOption(e.target.value);
   };
 
-  // Apply filters and sorting whenever filters/sortOption changes
   useEffect(() => {
     let filtered = [...allProducts];
 
