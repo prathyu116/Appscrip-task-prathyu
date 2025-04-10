@@ -77,22 +77,22 @@ const Footer = () => {
               }`}
             >
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="#">About Us</Link>
               </li>
               <li>
-                <Link href="/stories">Stories</Link>
+                <Link href="#">Stories</Link>
               </li>
               <li>
-                <Link href="/artisans">Artisans</Link>
+                <Link href="#">Artisans</Link>
               </li>
               <li>
-                <Link href="/boutiques">Boutiques</Link>
+                <Link href="#">Boutiques</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="#">Contact Us</Link>
               </li>
               <li>
-                <Link href="/compliance">EU Compliances Docs</Link>
+                <Link href="#">EU Compliances Docs</Link>
               </li>
             </ul>
           </div>
