@@ -1,0 +1,51 @@
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dropdown-toggle {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 220px;
+  justify-content: space-between;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
+
+.check-icon {
+  color: green;
+  font-size: 14px;
+}

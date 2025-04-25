@@ -5,6 +5,8 @@ import ProductCard from "./ProductCard";
 import FilterComponent from "./FilterComponent";
 import "../styles/products.css";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import CustomDropdown from "./CustomDropdown";
+
 
 const ProductList = () => {
   const [allProducts, setAllProducts] = useState([]); //store original datas
@@ -85,7 +87,7 @@ const ProductList = () => {
 
         <div className="product-list-filter-left">
           <h3>{products.length} ITEMS</h3>
-          <p onClick={() => setShowFilter(!showFilter)}>
+          <p onClick={() => setShowFilter(!showFilter)} style={{ cursor: "pointer" }}>
             {showFilter ? (
               <span>
                 <FiChevronLeft /> HIDE FILTER
@@ -97,13 +99,8 @@ const ProductList = () => {
             )}
           </p>
         </div>
-        <div>
-          <select onChange={handleSortChange}>
-            <option value="">RECOMMENDED</option>
-            <option value="low-to-high">Price: LOW TO HIGH</option>
-            <option value="high-to-low">Price: HIGH TO LOW</option>
-            <option value="high-rated">HIGH RATED</option>
-          </select>
+        <div className="custom-select-wrapper">
+          <CustomDropdown value={sortOption} onChange={setSortOption} />
         </div>
       </div>
 

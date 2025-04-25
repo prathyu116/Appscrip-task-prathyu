@@ -14,6 +14,7 @@ const FilterComponent = ({
   const isAnyFilterActive = selectedFilters.length > 0;
 
   return (
+    
     <div className="filter-box">
       <div className="filter-box-title">
         <input type="checkbox" />

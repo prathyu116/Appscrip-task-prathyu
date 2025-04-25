@@ -1,27 +1,44 @@
-.product-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: box-shadow 0.2s;
-  position: relative;
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #ffc107; 
 }
 
-.product-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.star-icon {
+  font-size: 1rem;
 }
 
-.product-image-container {
-  position: relative;
-  text-align: center;
-  margin-bottom: 1rem;
+.star-icon.filled {
+  color: #ffc107;
 }
 
-.product-image {
-  max-width: 100%;
+.star-icon.half {
+  color: #ffc107;
+}
+
+.star-icon.empty {
+  color: #ccc;
+}
+
+.rating-count {
+  font-size: 0.8rem;
+  color: #666;
+  margin-left: 4px;
+}
+
+.product-title {
   height: auto;
-  border-radius: 4px;
+  overflow: visible;
+  white-space: normal;
+  line-height: 1.4;
+  max-height: 3.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-
 .heart-button {
   position: absolute;
   top: 10px;
@@ -29,56 +46,26 @@
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 .heart-icon {
-  font-size: 2rem; /* Bigger size */
-  color: #ccc;
-  transition: color 0.2s ease;
+  font-size: 1.5rem;
+  color: #999;
+  transition: color 0.3s ease;
 }
 
 .heart-icon.liked {
-  color: red;
+  color: #e63946;
 }
 
-.product-info {
+.product-image-container {
+  position: relative; 
+  height: 200px;
+  overflow: hidden;
+  padding: 1rem;
+  background: #f9f9f9;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.product-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.product-category {
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.product-footer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-}
-
-.product-price {
-  font-weight: bold;
-}
-
-.product-button {
-  padding: 0.5rem 1rem;
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.product-button:hover {
-  background-color: #005bb5;
+  justify-content: center;
 }
