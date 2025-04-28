@@ -1,3 +1,26 @@
+
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+
+.product-image-container {
+  position: relative; 
+  /* overflow: hidden; */
+  padding: 1rem;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .product-rating {
   display: flex;
   align-items: center;
@@ -59,13 +82,3 @@
   color: #e63946;
 }
 
-.product-image-container {
-  position: relative; 
-  height: 200px;
-  overflow: hidden;
-  padding: 1rem;
-  background: #f9f9f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
